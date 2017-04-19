@@ -1,0 +1,91 @@
+# Running sched/messaging benchmark...
+# 20 sender and receiver processes per group
+# 10 groups == 400 processes run
+
+     Total time: 0.157 [sec]
+
+# Running sched/pipe benchmark...
+# Executed 1000000 pipe operations between two processes
+
+     Total time: 3.189 [sec]
+
+       3.189841 usecs/op
+         313495 ops/sec
+
+# Running mem/memcpy benchmark...
+# function 'default' (Default memcpy() provided by glibc)
+# Copying 1MB bytes ...
+
+      46.502976 GB/sec
+
+# Running mem/memset benchmark...
+# function 'default' (Default memset() provided by glibc)
+# Copying 1MB bytes ...
+
+      54.253472 GB/sec
+
+# Running futex/hash benchmark...
+Run summary [PID 13702]: 4 threads, each operating on 1024 [private] futexes for 10 secs.
+
+[thread  0] futexes: 0x3313fb0 ... 0x3314fac [ 6134579 ops/sec ]
+[thread  1] futexes: 0x3314fc0 ... 0x3315fbc [ 5033267 ops/sec ]
+[thread  2] futexes: 0x3315fd0 ... 0x3316fcc [ 5737574 ops/sec ]
+[thread  3] futexes: 0x3316fe0 ... 0x3317fdc [ 5634457 ops/sec ]
+
+Averaged 5634969 operations/sec (+- 4.04%), total secs = 10
+
+# Running futex/wake benchmark...
+Run summary [PID 13702]: blocking on 4 threads (at [private] futex 0x7db62c), waking up 1 at a time.
+
+[Run 1]: Wokeup 4 of 4 threads in 0.0180 ms
+[Run 2]: Wokeup 4 of 4 threads in 0.0110 ms
+[Run 3]: Wokeup 4 of 4 threads in 0.0090 ms
+[Run 4]: Wokeup 4 of 4 threads in 0.0170 ms
+[Run 5]: Wokeup 4 of 4 threads in 0.0130 ms
+[Run 6]: Wokeup 4 of 4 threads in 0.0160 ms
+[Run 7]: Wokeup 4 of 4 threads in 0.0180 ms
+[Run 8]: Wokeup 4 of 4 threads in 0.0130 ms
+[Run 9]: Wokeup 4 of 4 threads in 0.0170 ms
+[Run 10]: Wokeup 4 of 4 threads in 0.0180 ms
+Wokeup 4 of 4 threads in 0.0150 ms (+-6.89%)
+
+# Running futex/wake-parallel benchmark...
+Run summary [PID 13702]: blocking on 4 threads (at [private] futex 0x7db7a0), 4 threads waking up 1 at a time.
+
+[Run 1]: Avg per-thread latency (waking 1/4 threads) in 0.0055 ms (+-5.25%)
+[Run 2]: Avg per-thread latency (waking 1/4 threads) in 0.0328 ms (+-48.64%)
+[Run 3]: Avg per-thread latency (waking 1/4 threads) in 0.0075 ms (+-11.55%)
+[Run 4]: Avg per-thread latency (waking 1/4 threads) in 0.0597 ms (+-66.67%)
+[Run 5]: Avg per-thread latency (waking 1/4 threads) in 0.0395 ms (+-57.42%)
+[Run 6]: Avg per-thread latency (waking 1/4 threads) in 0.0250 ms (+-66.71%)
+[Run 7]: Avg per-thread latency (waking 1/4 threads) in 0.0140 ms (+-50.34%)
+[Run 8]: Avg per-thread latency (waking 1/4 threads) in 0.0230 ms (+-47.06%)
+[Run 9]: Avg per-thread latency (waking 1/4 threads) in 0.0080 ms (+-7.22%)
+[Run 10]: Avg per-thread latency (waking 1/4 threads) in 0.0493 ms (+-51.60%)
+Avg per-thread latency (waking 1/4 threads) in 0.0264 ms (+-22.25%)
+
+# Running futex/requeue benchmark...
+Run summary [PID 13702]: Requeuing 4 threads (from [private] 0x7db91c to 0x7db918), 1 at a time.
+
+[Run 1]: Requeued 4 of 4 threads in 0.0070 ms
+[Run 2]: Requeued 4 of 4 threads in 0.0050 ms
+[Run 3]: Requeued 4 of 4 threads in 0.0070 ms
+[Run 4]: Requeued 4 of 4 threads in 0.0070 ms
+[Run 5]: Requeued 4 of 4 threads in 0.0070 ms
+[Run 6]: Requeued 4 of 4 threads in 0.0060 ms
+[Run 7]: Requeued 4 of 4 threads in 0.0060 ms
+[Run 8]: Requeued 4 of 4 threads in 0.0070 ms
+[Run 9]: Requeued 4 of 4 threads in 0.0070 ms
+[Run 10]: Requeued 4 of 4 threads in 0.0070 ms
+Requeued 4 of 4 threads in 0.0066 ms (+-3.35%)
+
+# Running futex/lock-pi benchmark...
+Run summary [PID 13702]: 4 threads doing pi lock/unlock pairing for 10 secs.
+
+[thread   0] futex: 0x7dba20 [ 3375 ops/sec ]
+[thread   1] futex: 0x7dba20 [ 3375 ops/sec ]
+[thread   2] futex: 0x7dba20 [ 3375 ops/sec ]
+[thread   3] futex: 0x7dba20 [ 3375 ops/sec ]
+
+Averaged 3375 operations/sec (+- 0.00%), total secs = 10
+
