@@ -1,0 +1,211 @@
+# Running sched/messaging benchmark...
+# 20 sender and receiver processes per group
+# 10 groups == 400 processes run
+
+     Total time: 0.063 [sec]
+
+# Running sched/pipe benchmark...
+# Executed 1000000 pipe operations between two processes
+
+     Total time: 6.572 [sec]
+
+       6.572413 usecs/op
+         152151 ops/sec
+
+# Running mem/memcpy benchmark...
+# function 'default' (Default memcpy() provided by glibc)
+# Copying 1MB bytes ...
+
+       8.004611 GB/sec
+
+# Running mem/memset benchmark...
+# function 'default' (Default memset() provided by glibc)
+# Copying 1MB bytes ...
+
+       8.491848 GB/sec
+
+# Running futex/hash benchmark...
+Run summary [PID 40518]: 64 threads, each operating on 1024 [private] futexes for 10 secs.
+
+[thread  0] futexes: 0x33313f00 ... 0x33314efc [ 2126336 ops/sec ]
+[thread  1] futexes: 0x33314f10 ... 0x33315f0c [ 2030796 ops/sec ]
+[thread  2] futexes: 0x33316190 ... 0x3331718c [ 2069401 ops/sec ]
+[thread  3] futexes: 0x33317410 ... 0x3331840c [ 1953587 ops/sec ]
+[thread  4] futexes: 0x33318690 ... 0x3331968c [ 1997414 ops/sec ]
+[thread  5] futexes: 0x33319910 ... 0x3331a90c [ 1957990 ops/sec ]
+[thread  6] futexes: 0x3331ab90 ... 0x3331bb8c [ 2060902 ops/sec ]
+[thread  7] futexes: 0x3331be10 ... 0x3331ce0c [ 1935052 ops/sec ]
+[thread  8] futexes: 0x3331d090 ... 0x3331e08c [ 1981337 ops/sec ]
+[thread  9] futexes: 0x3331e310 ... 0x3331f30c [ 1954713 ops/sec ]
+[thread 10] futexes: 0x3331f590 ... 0x3332058c [ 2060800 ops/sec ]
+[thread 11] futexes: 0x33320810 ... 0x3332180c [ 1938534 ops/sec ]
+[thread 12] futexes: 0x33321a90 ... 0x33322a8c [ 1958502 ops/sec ]
+[thread 13] futexes: 0x33322d10 ... 0x33323d0c [ 1966182 ops/sec ]
+[thread 14] futexes: 0x33323f90 ... 0x33324f8c [ 2070937 ops/sec ]
+[thread 15] futexes: 0x33325210 ... 0x3332620c [ 1892352 ops/sec ]
+[thread 16] futexes: 0x33326490 ... 0x3332748c [ 1875968 ops/sec ]
+[thread 17] futexes: 0x33327710 ... 0x3332870c [ 1867980 ops/sec ]
+[thread 18] futexes: 0x33328990 ... 0x3332998c [ 2043801 ops/sec ]
+[thread 19] futexes: 0x33329c10 ... 0x3332ac0c [ 1803571 ops/sec ]
+[thread 20] futexes: 0x3332ae90 ... 0x3332be8c [ 1861734 ops/sec ]
+[thread 21] futexes: 0x3332c110 ... 0x3332d10c [ 1818316 ops/sec ]
+[thread 22] futexes: 0x3332d390 ... 0x3332e38c [ 2032742 ops/sec ]
+[thread 23] futexes: 0x3332e610 ... 0x3332f60c [ 1803161 ops/sec ]
+[thread 24] futexes: 0x3332f890 ... 0x3333088c [ 1846476 ops/sec ]
+[thread 25] futexes: 0x33330b10 ... 0x33331b0c [ 1830195 ops/sec ]
+[thread 26] futexes: 0x33331d90 ... 0x33332d8c [ 2030694 ops/sec ]
+[thread 27] futexes: 0x33333010 ... 0x3333400c [ 1777254 ops/sec ]
+[thread 28] futexes: 0x33334290 ... 0x3333528c [ 1845555 ops/sec ]
+[thread 29] futexes: 0x33335510 ... 0x3333650c [ 1835724 ops/sec ]
+[thread 30] futexes: 0x33336790 ... 0x3333778c [ 2019942 ops/sec ]
+[thread 31] futexes: 0x33337a10 ... 0x33338a0c [ 1279795 ops/sec ]
+[thread 32] futexes: 0x33338c90 ... 0x33339c8c [ 1373184 ops/sec ]
+[thread 33] futexes: 0x33339f10 ... 0x3333af0c [ 1466880 ops/sec ]
+[thread 34] futexes: 0x3333b190 ... 0x3333c18c [ 2000281 ops/sec ]
+[thread 35] futexes: 0x3333c410 ... 0x3333d40c [ 1867366 ops/sec ]
+[thread 36] futexes: 0x3333d690 ... 0x3333e68c [ 1994854 ops/sec ]
+[thread 37] futexes: 0x3333e910 ... 0x3333f90c [ 1961062 ops/sec ]
+[thread 38] futexes: 0x3333fb90 ... 0x33340b8c [ 2079232 ops/sec ]
+[thread 39] futexes: 0x33340e10 ... 0x33341e0c [ 1949081 ops/sec ]
+[thread 40] futexes: 0x33342090 ... 0x3334308c [ 1985638 ops/sec ]
+[thread 41] futexes: 0x33343310 ... 0x3334430c [ 1984614 ops/sec ]
+[thread 42] futexes: 0x33344590 ... 0x3334558c [ 2074214 ops/sec ]
+[thread 43] futexes: 0x33345810 ... 0x3334680c [ 1930547 ops/sec ]
+[thread 44] futexes: 0x33346a90 ... 0x33347a8c [ 1961267 ops/sec ]
+[thread 45] futexes: 0x33347d10 ... 0x33348d0c [ 1952256 ops/sec ]
+[thread 46] futexes: 0x33348f90 ... 0x33349f8c [ 2059980 ops/sec ]
+[thread 47] futexes: 0x3334a210 ... 0x3334b20c [ 1879654 ops/sec ]
+[thread 48] futexes: 0x3334b490 ... 0x3334c48c [ 1892659 ops/sec ]
+[thread 49] futexes: 0x3334c710 ... 0x3334d70c [ 1877401 ops/sec ]
+[thread 50] futexes: 0x3334d990 ... 0x3334e98c [ 2033561 ops/sec ]
+[thread 51] futexes: 0x3334ec10 ... 0x3334fc0c [ 1790873 ops/sec ]
+[thread 52] futexes: 0x3334fe90 ... 0x33350e8c [ 1841459 ops/sec ]
+[thread 53] futexes: 0x33351110 ... 0x3335210c [ 1834393 ops/sec ]
+[thread 54] futexes: 0x33352390 ... 0x3335338c [ 2037452 ops/sec ]
+[thread 55] futexes: 0x33353610 ... 0x3335460c [ 1785241 ops/sec ]
+[thread 56] futexes: 0x33354890 ... 0x3335588c [ 1862860 ops/sec ]
+[thread 57] futexes: 0x33355b10 ... 0x33356b0c [ 1841664 ops/sec ]
+[thread 58] futexes: 0x33356d90 ... 0x33357d8c [ 2015744 ops/sec ]
+[thread 59] futexes: 0x33358010 ... 0x3335900c [ 1774694 ops/sec ]
+[thread 60] futexes: 0x33359290 ... 0x3335a28c [ 1854668 ops/sec ]
+[thread 61] futexes: 0x3335a510 ... 0x3335b50c [ 1817190 ops/sec ]
+[thread 62] futexes: 0x3335b790 ... 0x3335c78c [ 2032640 ops/sec ]
+[thread 63] futexes: 0x3335ca10 ... 0x3335da0c [ 1981030 ops/sec ]
+
+Averaged 1911271 operations/sec (+- 0.99%), total secs = 10
+
+# Running futex/wake benchmark...
+Run summary [PID 40518]: blocking on 64 threads (at [private] futex 0x7007d4), waking up 1 at a time.
+
+[Run 1]: Wokeup 64 of 64 threads in 0.1500 ms
+[Run 2]: Wokeup 64 of 64 threads in 0.1470 ms
+[Run 3]: Wokeup 64 of 64 threads in 0.1460 ms
+[Run 4]: Wokeup 64 of 64 threads in 0.1600 ms
+[Run 5]: Wokeup 64 of 64 threads in 0.1520 ms
+[Run 6]: Wokeup 64 of 64 threads in 0.1370 ms
+[Run 7]: Wokeup 64 of 64 threads in 0.1440 ms
+[Run 8]: Wokeup 64 of 64 threads in 0.1470 ms
+[Run 9]: Wokeup 64 of 64 threads in 0.1450 ms
+[Run 10]: Wokeup 64 of 64 threads in 0.1410 ms
+Wokeup 64 of 64 threads in 0.1469 ms (+-1.35%)
+
+# Running futex/wake-parallel benchmark...
+Run summary [PID 40518]: blocking on 64 threads (at [private] futex 0x7008e4), 64 threads waking up 1 at a time.
+
+[Run 1]: Avg per-thread latency (waking 1/64 threads) in 0.0049 ms (+-14.95%)
+[Run 2]: Avg per-thread latency (waking 1/64 threads) in 0.0057 ms (+-21.58%)
+[Run 3]: Avg per-thread latency (waking 1/64 threads) in 0.0056 ms (+-15.19%)
+[Run 4]: Avg per-thread latency (waking 1/64 threads) in 0.0048 ms (+-7.83%)
+[Run 5]: Avg per-thread latency (waking 1/64 threads) in 0.0051 ms (+-15.26%)
+[Run 6]: Avg per-thread latency (waking 1/64 threads) in 0.0050 ms (+-10.82%)
+[Run 7]: Avg per-thread latency (waking 1/64 threads) in 0.0053 ms (+-14.79%)
+[Run 8]: Avg per-thread latency (waking 1/64 threads) in 0.0052 ms (+-16.11%)
+[Run 9]: Avg per-thread latency (waking 1/64 threads) in 0.0048 ms (+-13.74%)
+[Run 10]: Avg per-thread latency (waking 1/64 threads) in 0.0050 ms (+-12.82%)
+Avg per-thread latency (waking 1/64 threads) in 0.0051 ms (+-4.73%)
+
+# Running futex/requeue benchmark...
+Run summary [PID 40518]: Requeuing 64 threads (from [private] 0x700a04 to 0x700a1c), 1 at a time.
+
+[Run 1]: Requeued 64 of 64 threads in 0.0510 ms
+[Run 2]: Requeued 64 of 64 threads in 0.0530 ms
+[Run 3]: Requeued 64 of 64 threads in 0.0680 ms
+[Run 4]: Requeued 64 of 64 threads in 0.0530 ms
+[Run 5]: Requeued 64 of 64 threads in 0.0510 ms
+[Run 6]: Requeued 64 of 64 threads in 0.0520 ms
+[Run 7]: Requeued 64 of 64 threads in 0.0540 ms
+[Run 8]: Requeued 64 of 64 threads in 0.0520 ms
+[Run 9]: Requeued 64 of 64 threads in 0.0510 ms
+[Run 10]: Requeued 64 of 64 threads in 0.0540 ms
+Requeued 64 of 64 threads in 0.0539 ms (+-2.98%)
+
+# Running futex/lock-pi benchmark...
+Run summary [PID 40518]: 64 threads doing pi lock/unlock pairing for 10 secs.
+
+[thread   0] futex: 0x700b64 [ 257 ops/sec ]
+[thread   1] futex: 0x700b64 [ 257 ops/sec ]
+[thread   2] futex: 0x700b64 [ 257 ops/sec ]
+[thread   3] futex: 0x700b64 [ 257 ops/sec ]
+[thread   4] futex: 0x700b64 [ 257 ops/sec ]
+[thread   5] futex: 0x700b64 [ 257 ops/sec ]
+[thread   6] futex: 0x700b64 [ 257 ops/sec ]
+[thread   7] futex: 0x700b64 [ 257 ops/sec ]
+[thread   8] futex: 0x700b64 [ 257 ops/sec ]
+[thread   9] futex: 0x700b64 [ 257 ops/sec ]
+[thread  10] futex: 0x700b64 [ 257 ops/sec ]
+[thread  11] futex: 0x700b64 [ 257 ops/sec ]
+[thread  12] futex: 0x700b64 [ 257 ops/sec ]
+[thread  13] futex: 0x700b64 [ 257 ops/sec ]
+[thread  14] futex: 0x700b64 [ 257 ops/sec ]
+[thread  15] futex: 0x700b64 [ 257 ops/sec ]
+[thread  16] futex: 0x700b64 [ 257 ops/sec ]
+[thread  17] futex: 0x700b64 [ 257 ops/sec ]
+[thread  18] futex: 0x700b64 [ 257 ops/sec ]
+[thread  19] futex: 0x700b64 [ 257 ops/sec ]
+[thread  20] futex: 0x700b64 [ 257 ops/sec ]
+[thread  21] futex: 0x700b64 [ 257 ops/sec ]
+[thread  22] futex: 0x700b64 [ 257 ops/sec ]
+[thread  23] futex: 0x700b64 [ 257 ops/sec ]
+[thread  24] futex: 0x700b64 [ 257 ops/sec ]
+[thread  25] futex: 0x700b64 [ 257 ops/sec ]
+[thread  26] futex: 0x700b64 [ 257 ops/sec ]
+[thread  27] futex: 0x700b64 [ 257 ops/sec ]
+[thread  28] futex: 0x700b64 [ 257 ops/sec ]
+[thread  29] futex: 0x700b64 [ 257 ops/sec ]
+[thread  30] futex: 0x700b64 [ 257 ops/sec ]
+[thread  31] futex: 0x700b64 [ 257 ops/sec ]
+[thread  32] futex: 0x700b64 [ 257 ops/sec ]
+[thread  33] futex: 0x700b64 [ 257 ops/sec ]
+[thread  34] futex: 0x700b64 [ 257 ops/sec ]
+[thread  35] futex: 0x700b64 [ 257 ops/sec ]
+[thread  36] futex: 0x700b64 [ 257 ops/sec ]
+[thread  37] futex: 0x700b64 [ 257 ops/sec ]
+[thread  38] futex: 0x700b64 [ 257 ops/sec ]
+[thread  39] futex: 0x700b64 [ 257 ops/sec ]
+[thread  40] futex: 0x700b64 [ 257 ops/sec ]
+[thread  41] futex: 0x700b64 [ 257 ops/sec ]
+[thread  42] futex: 0x700b64 [ 257 ops/sec ]
+[thread  43] futex: 0x700b64 [ 257 ops/sec ]
+[thread  44] futex: 0x700b64 [ 257 ops/sec ]
+[thread  45] futex: 0x700b64 [ 257 ops/sec ]
+[thread  46] futex: 0x700b64 [ 257 ops/sec ]
+[thread  47] futex: 0x700b64 [ 257 ops/sec ]
+[thread  48] futex: 0x700b64 [ 257 ops/sec ]
+[thread  49] futex: 0x700b64 [ 257 ops/sec ]
+[thread  50] futex: 0x700b64 [ 257 ops/sec ]
+[thread  51] futex: 0x700b64 [ 257 ops/sec ]
+[thread  52] futex: 0x700b64 [ 257 ops/sec ]
+[thread  53] futex: 0x700b64 [ 257 ops/sec ]
+[thread  54] futex: 0x700b64 [ 257 ops/sec ]
+[thread  55] futex: 0x700b64 [ 257 ops/sec ]
+[thread  56] futex: 0x700b64 [ 257 ops/sec ]
+[thread  57] futex: 0x700b64 [ 257 ops/sec ]
+[thread  58] futex: 0x700b64 [ 257 ops/sec ]
+[thread  59] futex: 0x700b64 [ 257 ops/sec ]
+[thread  60] futex: 0x700b64 [ 257 ops/sec ]
+[thread  61] futex: 0x700b64 [ 257 ops/sec ]
+[thread  62] futex: 0x700b64 [ 257 ops/sec ]
+[thread  63] futex: 0x700b64 [ 257 ops/sec ]
+
+Averaged 257 operations/sec (+- 0.00%), total secs = 10
+
