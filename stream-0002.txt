@@ -1,0 +1,22 @@
+>perf stat ./stream -P 4
+STREAM copy latency: 3.98 nanoseconds
+STREAM copy bandwidth: 16076.02 MB/sec
+STREAM scale latency: 4.00 nanoseconds
+STREAM scale bandwidth: 15981.49 MB/sec
+STREAM add latency: 5.43 nanoseconds
+STREAM add bandwidth: 17673.70 MB/sec
+STREAM triad latency: 5.42 nanoseconds
+STREAM triad bandwidth: 17719.02 MB/sec
+
+ Performance counter stats for './stream -P 4':
+
+      50961.046159      task-clock (msec)         #    3.726 CPUs utilized          
+             9,872      context-switches          #    0.194 K/sec                  
+                74      cpu-migrations            #    0.001 K/sec                  
+            36,090      page-faults               #    0.708 K/sec                  
+   197,728,120,171      cycles                    #    3.880 GHz                    
+    66,889,585,121      instructions              #    0.34  insn per cycle         
+    11,662,024,889      branches                  #  228.842 M/sec                  
+           365,885      branch-misses             #    0.00% of all branches        
+
+      13.678444723 seconds time elapsed
