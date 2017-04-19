@@ -1,0 +1,72 @@
+export LMBENCH_SCHED="DEFAULT"                                                                                                                                                                                     
+perf stat ./stream -P 32                                                                                                                                                                                           
+                                                                                                                                                                                                                   
+STREAM copy latency: 71.45 nanoseconds                                                                                                                                                                             
+STREAM copy bandwidth: 7165.98 MB/sec                                                                                                                                                                              
+STREAM scale latency: 71.64 nanoseconds                                                                                                                                                                            
+STREAM scale bandwidth: 7146.70 MB/sec                                                                                                                                                                             
+STREAM add latency: 108.05 nanoseconds                                                                                                                                                                             
+STREAM add bandwidth: 7107.60 MB/sec                                                                                                                                                                               
+STREAM triad latency: 114.62 nanoseconds                                                                                                                                                                           
+STREAM triad bandwidth: 6700.48 MB/sec                                                                                                                                                                             
+                                                                                                                                                                                                                   
+ Performance counter stats for './stream -P 32':                                                                                                                                                                   
+                                                                                                                                                                                                                   
+    3410305.768240      task-clock (msec)         #   31.322 CPUs utilized                                                                                                                                         
+             4,428      context-switches          #    0.001 K/sec                                                                                                                                                 
+               466      cpu-migrations            #    0.000 K/sec                                                                                                                                                 
+           779,360      page-faults               #    0.229 K/sec                                                                                                                                                 
+ 7,161,244,357,986      cycles                    #    2.100 GHz                                                                                                                                                   
+   <not supported>      stalled-cycles-frontend                                                                                                                                                                    
+   <not supported>      stalled-cycles-backend                                                                                                                                                                     
+   350,953,376,146      instructions              #    0.05  insns per cycle                                                                                                                                       
+   <not supported>      branches                                                                                                                                                                                   
+       239,234,366      branch-misses             #    0.00% of all branches                                                                                                                                       
+                                                                                                                                                                                                                   
+     108.879993673 seconds time elapsed                                                                                                                                                                            
+                                                                                                                                                                                                                   
+                                                                                                                                                                                                                   
+export LMBENCH_SCHED="BALANCED"                                                                                                                                                                                    
+perf stat ./stream -P 32                                                                                                                                                                                           
+                                                                                                                                                                                                                   
+STREAM copy latency: 71.58 nanoseconds                                                                                                                                                                             
+STREAM copy bandwidth: 7153.10 MB/sec                                                                                                                                                                              
+STREAM scale latency: 71.19 nanoseconds                                                                                                                                                                            
+STREAM scale bandwidth: 7192.06 MB/sec                                                                                                                                                                             
+STREAM add latency: 108.20 nanoseconds                                                                                                                                                                             
+STREAM add bandwidth: 7097.70 MB/sec                                                                                                                                                                               
+STREAM triad latency: 114.95 nanoseconds                                                                                                                                                                           
+STREAM triad bandwidth: 6681.34 MB/sec                                                                                                                                                                             
+                                                                                                                                                                                                                   
+ Performance counter stats for './stream -P 32':                                                                                                                                                                   
+                                                                                                                                                                                                                   
+    3109558.157040      task-clock (msec)         #   31.330 CPUs utilized                                                                                                                                         
+             3,862      context-switches          #    0.001 K/sec                                                                                                                                                 
+               490      cpu-migrations            #    0.000 K/sec                                                                                                                                                 
+           780,111      page-faults               #    0.251 K/sec                                                                                                                                                 
+ 6,529,690,982,085      cycles                    #    2.100 GHz                                                                                                                                                   
+   <not supported>      stalled-cycles-frontend                                                                                                                                                                    
+   <not supported>      stalled-cycles-backend                                                                                                                                                                     
+   322,926,203,056      instructions              #    0.05  insns per cycle                                                                                                                                       
+   <not supported>      branches                                                                                                                                                                                   
+       229,102,841      branch-misses             #    0.00% of all branches                                                                                                                                       
+                                                                                                                                                                                                                   
+      99.251469599 seconds time elapsed
+
+     5,989,065,253      L1-dcache-load-misses     #    6.71% of all L1-dcache hits    (50.05%)
+    89,287,922,187      L1-dcache-loads                                               (50.05%)
+     2,787,522,354      L1-dcache-store-misses                                        (50.05%)
+    58,645,256,816      L1-dcache-stores                                              (50.05%)
+        49,509,302      L1-icache-load-misses                                         (50.04%)
+   132,023,966,051      L1-icache-loads                                               (50.04%)
+       236,061,795      branch-load-misses                                            (42.89%)
+    58,202,111,957      branch-loads                                                  (42.89%)
+       121,261,602      dTLB-load-misses                                              (42.89%)
+        72,950,730      dTLB-store-misses                                             (42.89%)
+        24,779,221      iTLB-load-misses                                              (42.88%)
+ 6,453,136,773,714      bus-cycles                                                    (42.89%)
+   328,609,104,859      instructions              #    0.05  insns per cycle          (42.90%)
+ 6,453,278,406,009      cycles                                                        (50.04%)
+
+      99.637285260 seconds time elapsed
+

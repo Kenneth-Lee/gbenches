@@ -1,0 +1,24 @@
+>perf stat ./stream -P 64
+STREAM copy latency: 11.28 nanoseconds
+STREAM copy bandwidth: 90751.24 MB/sec
+STREAM scale latency: 10.91 nanoseconds
+STREAM scale bandwidth: 93821.08 MB/sec
+STREAM add latency: 16.53 nanoseconds
+STREAM add bandwidth: 92946.87 MB/sec
+STREAM triad latency: 16.54 nanoseconds
+STREAM triad bandwidth: 92841.98 MB/sec
+
+ Performance counter stats for './stream -P 64':
+
+    2691509.929500      task-clock (msec)         #   62.843 CPUs utilized          
+             4,473      context-switches          #    0.002 K/sec                  
+               485      cpu-migrations            #    0.000 K/sec                  
+           500,194      page-faults               #    0.186 K/sec                  
+ 6,458,972,978,562      cycles                    #    2.400 GHz                    
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+ 1,293,244,232,473      instructions              #    0.20  insns per cycle        
+   <not supported>      branches                 
+        29,523,387      branch-misses             #    0.00% of all branches        
+
+      42.829286090 seconds time elapsed
